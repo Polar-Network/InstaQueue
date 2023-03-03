@@ -1,0 +1,15 @@
+join-server = "hub"
+first-queue = "bedwars"
+queue-message = "<gray>Joining <gold>%queue%<gray> queue... <gray>(<gold>%position%<gray>/<gold>%size%<gray>)"
+position-message = "<gray>Position in queue: <gold>%position%<gray>/<gold>%size%<gray>"
+
+[intervals] # Seconds
+    update = 1 # How often to update the queue in seconds
+    message = 5 # How often to send the player their position in the queue
+
+[priorities]
+    5 = "queue.priority.highest"
+    4 = "queue.priority.high"
+    3 = "queue.priority.normal"
+    2 = "queue.priority.low"
+    1 = "queue.priority.lowest"
